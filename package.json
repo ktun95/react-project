@@ -2,9 +2,11 @@
   "name": "boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "pindex.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build-watch": "webpack -w", 
     "start": "nodemon server -e html,js,scss,css & webpack -w",
     "seed": "node seed.js"
   },
