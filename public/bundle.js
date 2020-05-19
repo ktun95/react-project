@@ -86,6 +86,102 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./client/Main.js":
+/*!************************!*\
+  !*** ./client/Main.js ***!
+  \************************/
+/*! exports provided: Main, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Main\", function() { return Main; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _pages__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages */ \"./client/pages/index.js\");\n/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components */ \"./client/components/index.js\");\n\n\n\nvar Main = function Main() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"content-area\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_2__[\"Header\"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages__WEBPACK_IMPORTED_MODULE_1__[\"Home\"], null));\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Main);\n\n//# sourceURL=webpack:///./client/Main.js?");
+
+/***/ }),
+
+/***/ "./client/components/Article.js":
+/*!**************************************!*\
+  !*** ./client/components/Article.js ***!
+  \**************************************/
+/*! exports provided: Article */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Article\", function() { return Article; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar Article = function Article(_ref) {\n  var header = _ref.header,\n      content = _ref.content;\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"article\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h2\", {\n    className: \"article-header\"\n  }, header), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"article-content\"\n  }, content));\n}; // export default Article\n\n//# sourceURL=webpack:///./client/components/Article.js?");
+
+/***/ }),
+
+/***/ "./client/components/ArticleNav.js":
+/*!*****************************************!*\
+  !*** ./client/components/ArticleNav.js ***!
+  \*****************************************/
+/*! exports provided: ArticleNav, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ArticleNav\", function() { return ArticleNav; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar ArticleNav = function ArticleNav(props) {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"article-nav\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    onClick: props.handlePrev\n  }, \" prev  \"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    onClick: props.handleNext\n  }, \" next \"));\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (ArticleNav);\n\n//# sourceURL=webpack:///./client/components/ArticleNav.js?");
+
+/***/ }),
+
+/***/ "./client/components/Header.js":
+/*!*************************************!*\
+  !*** ./client/components/Header.js ***!
+  \*************************************/
+/*! exports provided: Header, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Header\", function() { return Header; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar Header = function Header() {\n  // const [language, setLanguage] = useState('en')\n  // const languageArray = ['en', 'chi', 'fa', 'khm']\n  // const greetingObj = {\n  //     en: 'Hello',\n  //     chi: '你好',\n  //     fa:  'سلام',\n  //     khm: 'សួស្តី'\n  // }\n  // const createh1 = (languageCode) => {\n  //     return (\n  //         <h1 id=\"header-greeting\">\n  //             {greetingObj[languageCode]}!\n  //         </h1>\n  //     )\n  // }\n  // useEffect(() => {\n  //     const greetingInterval = setInterval(() => {\n  //         document.getElementById(\"header\").innerHTML = createh2(language)\n  //         setLanguage(languageArray[languageArray.indexOf(language) + 1])\n  //     }, 3000)\n  //     return () => {\n  //         clearInterval(greetingInterval)\n  //     }\n  // })\n\n  /* \n    */\n\n  /* \n  const greetingsArray = [\n      'Hello',\n      '你好',\n      'سلام',\n      'សួស្តី'\n  ]\n   const greetingsObj = {\n      en: 'Hello',\n      chi: '你好',\n      fa:  'سلام',\n      khm: 'សួស្តី'\n  }\n   const changeGreeting = (hello) => {\n     const currentGreeting =  document.getElementById('header-greeting')\n     currentGreeting.innerHTML = hello + '!'\n  }\n   useEffect(() => {\n       let greetIdx = 1\n       const greetingInterval = setInterval(() => { //interval should run changeGreeting with next element in greetingArray\n          changeGreeting(greetingsArray[greetIdx])\n          greetIdx = (greetIdx === greetingsArray.length - 1) ? 0 : greetIdx + 1\n      }, 3000);\n       return () => {\n          clearInterval(greetingInterval)\n      }\n   }, [])\n   */\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    id: \"header\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h1\", {\n    id: \"header-greeting\"\n  }, \" Hello!\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h2\", {\n    id: \"header-text\"\n  }, \"My name is Kevin, and I make stuff\"));\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n//# sourceURL=webpack:///./client/components/Header.js?");
+
+/***/ }),
+
+/***/ "./client/components/List.js":
+/*!***********************************!*\
+  !*** ./client/components/List.js ***!
+  \***********************************/
+/*! exports provided: List, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"List\", function() { return List; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar List = function List(_ref) {\n  var header = _ref.header,\n      list = _ref.list;\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h2\", {\n    className: \"list-header\"\n  }, header), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"span\", {\n    className: \"list-links\"\n  }, list));\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (List);\n\n//# sourceURL=webpack:///./client/components/List.js?");
+
+/***/ }),
+
+/***/ "./client/components/ProjectLink.js":
+/*!******************************************!*\
+  !*** ./client/components/ProjectLink.js ***!
+  \******************************************/
+/*! exports provided: ProjectLink */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ProjectLink\", function() { return ProjectLink; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar ProjectLink = function ProjectLink(_ref) {\n  var title = _ref.title,\n      link = _ref.link,\n      description = _ref.description;\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n    href: link\n  }, title), \"  //\", description);\n}; // export default ProjectLink\n//add propTypes\n\n//# sourceURL=webpack:///./client/components/ProjectLink.js?");
+
+/***/ }),
+
+/***/ "./client/components/Section.js":
+/*!**************************************!*\
+  !*** ./client/components/Section.js ***!
+  \**************************************/
+/*! exports provided: Section, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Section\", function() { return Section; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _ArticleNav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ArticleNav */ \"./client/components/ArticleNav.js\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance\"); }\n\nfunction _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === \"[object Arguments]\")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\nvar Section = function Section(_ref) {\n  var children = _ref.children;\n\n  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])(0),\n      _useState2 = _slicedToArray(_useState, 2),\n      articleIdx = _useState2[0],\n      setArticleIdx = _useState2[1];\n\n  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])(null),\n      _useState4 = _slicedToArray(_useState3, 2),\n      height = _useState4[0],\n      setHeight = _useState4[1];\n\n  var initialSection = Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useRef\"])(null);\n  console.log(children); //use effect to retain the size styling calculating by the initial article?\n\n  /*\n  1st Render: children or children[0] is rendered, section height will be calculated from this\n  useEffect: capture value of  \n   */\n\n  Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useEffect\"])(function () {\n    console.log(initialSection.current.clientHeight);\n\n    if (Array.isArray(children)) {\n      //only use this effect if there this component will receive multiple children\n      // debugger;\n      console.log('stateheight', height);\n      console.log(initialSection.current.clientHeight);\n      setHeight(initialSection.current.clientHeight);\n    }\n  }, []);\n\n  var handleNext = function handleNext() {\n    console.log('current articleidx:', articleIdx);\n    console.log(children.length);\n\n    if (articleIdx === children.length - 1) {\n      setArticleIdx(0);\n      return;\n    }\n\n    setArticleIdx(articleIdx + 1);\n  };\n\n  var handlePrev = function handlePrev() {\n    console.log('current articleidx:', articleIdx);\n\n    if (articleIdx === 0) {\n      setArticleIdx(children.length - 1);\n      return;\n    }\n\n    setArticleIdx(articleIdx - 1);\n  };\n\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"section\",\n    ref: initialSection,\n    style: height ? {\n      height: height\n    } : null\n  }, Array.isArray(children) ? [children[articleIdx], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ArticleNav__WEBPACK_IMPORTED_MODULE_1__[\"ArticleNav\"], {\n    handleNext: handleNext,\n    handlePrev: handlePrev\n  })] : children);\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Section);\n\n//# sourceURL=webpack:///./client/components/Section.js?");
+
+/***/ }),
+
+/***/ "./client/components/index.js":
+/*!************************************!*\
+  !*** ./client/components/index.js ***!
+  \************************************/
+/*! exports provided: Article, ProjectLink, Header, Section, List */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Article__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Article */ \"./client/components/Article.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Article\", function() { return _Article__WEBPACK_IMPORTED_MODULE_0__[\"Article\"]; });\n\n/* harmony import */ var _ProjectLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProjectLink */ \"./client/components/ProjectLink.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"ProjectLink\", function() { return _ProjectLink__WEBPACK_IMPORTED_MODULE_1__[\"ProjectLink\"]; });\n\n/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ \"./client/components/Header.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Header\", function() { return _Header__WEBPACK_IMPORTED_MODULE_2__[\"Header\"]; });\n\n/* harmony import */ var _Section__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Section */ \"./client/components/Section.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Section\", function() { return _Section__WEBPACK_IMPORTED_MODULE_3__[\"Section\"]; });\n\n/* harmony import */ var _List__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./List */ \"./client/components/List.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"List\", function() { return _List__WEBPACK_IMPORTED_MODULE_4__[\"List\"]; });\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./client/components/index.js?");
+
+/***/ }),
+
 /***/ "./client/index.js":
 /*!*************************!*\
   !*** ./client/index.js ***!
@@ -94,7 +190,31 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h1\", null, \"React App\"), document.getElementById('app'));\n\n//# sourceURL=webpack:///./client/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _Main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Main */ \"./client/Main.js\");\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Main__WEBPACK_IMPORTED_MODULE_2__[\"Main\"], null), document.getElementById('app'));\n\n//# sourceURL=webpack:///./client/index.js?");
+
+/***/ }),
+
+/***/ "./client/pages/Home.js":
+/*!******************************!*\
+  !*** ./client/pages/Home.js ***!
+  \******************************/
+/*! exports provided: Home, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Home\", function() { return Home; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components */ \"./client/components/index.js\");\n\n\nvar Home = function Home() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_1__[\"Section\"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_1__[\"List\"], {\n    header: 'Contact',\n    list: [react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      href: \"https://www.linkedin.com/in/kevin-tun/\"\n    }, \" Linkedin \"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      href: \"https://www.github.com/ktun95/\"\n    }, \" Github \"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      href: \"mailto:kevintun01@gmail.com\"\n    }, \" Email \"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"a\", {\n      href: \"/KEVINTUNRESUME.pdf\"\n    }, \" Resume \")]\n  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_1__[\"Section\"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_1__[\"Article\"], {\n    header: 'Projects',\n    content: [react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_1__[\"ProjectLink\"], {\n      title: 'monkey-memory',\n      link: 'https://monkey-memory.herokuapp.com/',\n      description: 'Implementation of a memory test like those used in studies of the working memory of chimpanzees. Built with React'\n    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_1__[\"ProjectLink\"], {\n      title: 'mineralogie',\n      link: 'https://monkey-memory.herokuapp.com/',\n      description: 'Mock e-commerce site for purchasing rocks'\n    })]\n  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_1__[\"Section\"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_1__[\"Article\"], {\n    header: 'Scrapyard'\n  })));\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./client/pages/Home.js?");
+
+/***/ }),
+
+/***/ "./client/pages/index.js":
+/*!*******************************!*\
+  !*** ./client/pages/index.js ***!
+  \*******************************/
+/*! exports provided: Home */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Home */ \"./client/pages/Home.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Home\", function() { return _Home__WEBPACK_IMPORTED_MODULE_0__[\"Home\"]; });\n\n\n\n//# sourceURL=webpack:///./client/pages/index.js?");
 
 /***/ }),
 
