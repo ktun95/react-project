@@ -1,33 +1,31 @@
 {
-  "name": "kevin-tun-portfolio",
+  "name": "boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "build-watch": "webpack -w",
-    "start-dev": "nodemon server -e html,js,scss,css & webpack -w",
-    "start": "node server",
+    "build-watch": "webpack -w", 
+    "start": "nodemon server -e html,js,scss,css & webpack -w",
     "seed": "node seed.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "animate.css": "^4.1.0",
-    "axios": "^0.19.2",
-    "express": "^4.17.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
-  },
-  "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/polyfill": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
+    "axios": "^0.19.2",
     "babel-loader": "^8.0.6",
+    "express": "^4.17.1",
     "nodemon": "^2.0.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
   }
